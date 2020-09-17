@@ -35,7 +35,6 @@ let header = $(`
         <li><a class="white-text" href="/">Home</a></li>
         <li><a class="white-text" href="/experience">Experience</a></li>
         <li><a class="white-text" href="/education">Education</a></li>
-       
         <li><a class="white-text" href="https://personalstuffrequireforhosting.s3.amazonaws.com/Resume-Arslan-Ismail.pdf" target="_blank">My Resume</a></li>
         <!--TOGGLE FOR LIGHT/DARK MODE-->
         
@@ -46,7 +45,7 @@ let header = $(`
 <!--Side Nav Bar -->
 <ul class="sidenav" id="mobile-demo">
 <li><a href="index.html">Home</a></li>
-<li><a href="/">Experience</a></li>
+<li><a href="experience.html">Experience</a></li>
 <li><a href="projects.html">Projects</a></li>
 <li><a href="research.html">Research</a></li>
 <li><a href="education.html">Education</a></li>
@@ -90,14 +89,15 @@ let footer = $(`
     </div>
     <!-- Social media icons for footer -->
 
-<div class="social-icons-footer">
-  <a class="social-icon-footer linkedin" href="https://www.linkedin.com/in/arslan-ismail/" target="_blank" rel="author">
-    <i class="fab fa-linkedin-in"></i>
-      </a>
-  <a class="social-icon-footer github" href="http://github.com/arslanismail" target="_blank" rel="author">
-    <i class="fab fa-github"></i>
-      </a>
-</div>
+
+    <div class="social-icons-footer">
+    <a class="social-icon-footer linkedin" href="https://www.linkedin.com/in/arslan-ismail/" target="_blank" rel="author">
+      <i class="fab fa-linkedin-in"></i>
+        </a>
+    <a class="social-icon-footer github" href="http://github.com/arslanismail" target="_blank" rel="author">
+      <i class="fab fa-github"></i>
+        </a>
+  </div>
     </div>
 
       <div class="col-sm-6 col-md-5 pt-3 footer-2">
@@ -142,4 +142,4 @@ bodyElement.append(footer);
 /*JavaScript for toggle for light/dark mode*/
 
 var checkbox = document.querySelector("input[name=theme]");
-document.documentElement.setAttribute("data-theme", "dark");
+document.documentElement.setAttribute("data-theme", "light");

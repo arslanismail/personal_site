@@ -1,28 +1,30 @@
 //  Work experience cards
 
-
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Reasearch and Development Intern",
-    cardImage: "assets/images/experience-page/UCL.JPG",
-    place: "UCL",
+    title: "FullStack Engineer (Javascript)",
+    cardImage: "images/aiondigital.JPG",
+    place: "AionDigital",
     time: "(May2020-present)",
-    desp: "<li>Automatic detection of Orthopedic Implants using Deep Learning.</li> <li>Collection of radiographs, data cleaning and database management.</li> <li>Image Quality Analysis for Bio-Medical Images.</li> <li>Serving Models using TensorFlow JS.</li> <li>Experimenting with Few Shot Learning, Adversarial Training and Class Activation Maps.</li>",
+    desp:
+      "<li>Working on providing Digital Banking services for banks in UAE .</li> <li> Senior Javascript developer for  Backend</li> <li>Working on Micro Services Architechture (Dockerzing Modules)</li> <li>Have been doing Team Code Reviews</li>",
   },
   {
-    title: "Robotics and Embedded system Intern",
-    cardImage: "assets/images/experience-page/lema-labs.png",
-    place: "LEMA LABS",
-    time: "(Jun-Jul,2019)",
-    desp: "<li>Design low cost prototyping boards for teaching robotics to underprivileged children.</li> <li>Worked on integration of Face Recognition based models with Raspberry Pi and Intel Movidius.</li> <li>Image Quality Analysis for Bio-Medical Images.Experimented with various algorithms for Lane Detection as well as Shortest Paths for Autonomous Vehicles.</li>",
+    title: "Sofware Engineer",
+    cardImage: "images/NB.png",
+    place: "NextBridge",
+    time: "(Jan 2018-April 2020)",
+    desp:
+      "<li>Worked As A Php Engineer .</li><li>Worked in Diffrenct Technologies like Raw Php and Laravel for Making Diffrent Project</li><li>Worked On construction Related Apps Like ZeroDocs</li><li>Started Working in various Javascrip Project as a junior developer</li>",
   },
   {
     title: "Research Intern",
-    cardImage: "assets/images/experience-page/ISI.png",
-    place: "ISI, Kolkata",
-    time: "(Dec 19-Jan 20)",
-    desp:"<li>Worked on for Image Encryption and Image Forgery Detection.</li>",
+    cardImage: "images/HTMLPro.png",
+    place: "HTMLPro",
+    time: "(September 2017-December 2017 )",
+    desp:
+      "<li>Worked as R&D Engineer</li><li>Worked on OCR (OPTICAL CHARACTER RECOGNITION)</li><li>Customize Google Tesseract with our Trained Data via KNN to serve our use case</li>",
   },
 ];
 
@@ -56,89 +58,25 @@ const showCards2 = () => {
 };
 document.addEventListener("DOMContentLoaded", showCards2);
 
-
 // Volunteership Cards
 
-const volunteership = document.querySelector(".volunteership");
-const volunteershipcards = [
-  {
-    title: "GirlScript Summer Of Code 2020",
-    cardImage: "/assets/images/experience-page/1.jpg",
-    description:
-      "Responsible for handling the projects GirlScript App and GirlScript Website Boilerplate.",
-  },
-  {
-    title: "StudentCode-in 2020",
-    cardImage: "/assets/images/experience-page/2.jpg",
-    description:
-      "Responsible for handling open source contributions for the project Awesome Developer Portfolio.",
-  },
-  {
-    title: "PClub Summer Of Code 2020",
-    cardImage: "/assets/images/experience-page/3.jpg",
-    description:
-      "Mentoring for the projects Deep Pixel, AutoVaidya, Just Resume and Doc2pen.",
-  },
-  {
-    title: "Hakin-Codes",
-    cardImage: "/assets/images/experience-page/4.jpg",
-    description:
-      "Mentoring for the open source projects Deeppixel, Awesome Developer Portfolios and Doc2Pen.",
-  },
-  {
-    title: "30 DaysofFlutter",
-    cardImage: "/assets/images/experience-page/5.jpg",
-    description:
-      "Helping beginners from their first steps in Flutter to building fully functional cross-platform applications.",
-  },
-  {
-    title: "Garuda Hacks",
-    cardImage: "/assets/images/experience-page/6.jpg",
-    description:
-      "MLH sponsored Indonesia's premier Global Virtual Hackathon on 14 - 16th August 2020.",
-  },
-];
-
-const showCards = () => {
-  let output = "";
-  volunteershipcards.forEach(
-    ({ title, cardImage, description }) =>
-      (output += `        
-      <div class="card" style="background-image: url(${cardImage});background-repeat: no-repeat, repeat; background-size: cover; background-position: center;">
-      <div class="content">
-          <h2 class="title">${title}</h2>
-          <p class="copy">${description}</p></div>
-      </div>
-      `)
-  );
-  volunteership.innerHTML = output;
-};
-document.addEventListener("DOMContentLoaded", showCards);
-
-
 // Mentorship Card
-
 
 const mentorshipcards = document.querySelector(".mentorship-cards");
 const mentor = [
   {
     title: "HakinCode",
-    image: "assets/images/experience-page/hakin.png",
+    image: "images/experience-page/hakin.png",
     time: "06/2020 - 08/2020",
-    desp: "<li>It is an open source community where students and mentors can apply.</li><hr /><li>Ample amount of technologies and projects are there and we are given opportunity to work on them according to our interest and knowledge.</li>",
-  },
-  {
-    title: "Google Summer of Code",
-    image: "assets/images/experience-page/gsoc.png",
-    time: "03/2020 - 08/2020",
-    desp: "<li>Google Summer of Code is a global program focused on introducing students to open source software development.</li><hr /><li>It is a great platform to explore new areas, maybe discover a new career path!</li>",
+    desp:
+      "<li>It is an open source community where students and mentors can apply.</li><hr /><li>Ample amount of technologies and projects are there and we are given opportunity to work on them according to our interest and knowledge.</li>",
   },
 ];
 
 const showCards3 = () => {
   let output = "";
   mentor.forEach(
-    ({ title, image, time, desp}) =>
+    ({ title, image, time, desp }) =>
       (output += `        
       <div class="col-sm-6">
       <div class="card card2">
