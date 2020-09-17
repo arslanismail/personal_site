@@ -4,7 +4,7 @@ const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
     title: "FullStack Engineer (Javascript)",
-    cardImage: "images/aiondigital.JPG",
+    cardImage: "images/aiondigital.jpg",
     place: "AionDigital",
     time: "(May2020-present)",
     desp:
@@ -20,7 +20,7 @@ const exp = [
   },
   {
     title: "Research Intern",
-    cardImage: "images/HTMLPro.png",
+    cardImage: "images/HtmlPro.png",
     place: "HTMLPro",
     time: "(September 2017-December 2017 )",
     desp:
